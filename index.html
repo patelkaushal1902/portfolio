@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushal Patel - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo" onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });">KP Dev</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#milestones">Milestones</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Patel Kaushal Maheshbhai.CV.pdf" download class="nav-btn">Download CV</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">I'm Kaushal Patel</h1>
+            <p class="animate-text typing-effect">Web Developer | Creative Innovator | Problem Solver</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn animate-btn">Explore My Work</a>
+            </div>
+        </div>
+        <canvas id="bg-canvas"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <img src="KP.jpg" alt="Kaushal Patel" class="profile-img">
+            <div class="about-text">
+                <p>I'm a dedicated web developer passionate about crafting dynamic and static websites that deliver seamless, user-centric digital experiences.</p>
+                <p>My focus is on building innovative solutions that combine creativity and technical expertise to drive business success and enhance user engagement.</p>
+                <div class="about-details">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:patelkaushal8200@gmail.com">patelkaushal8200@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> 8200254165</p>
+                    <p class="social-icons">
+                        <a href="https://linkedin.com/in/patelkaushal" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/kaushalpatel.1902" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/patelkaushal1902" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+                <div class="progress-bar"><div class="progress" style="width: 90%;" data-width="90"></div></div>
+                <span class="progress-text">90%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+                <div class="progress-bar"><div class="progress" style="width: 85%;" data-width="85"></div></div>
+                <span class="progress-text">85%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+                <div class="progress-bar"><div class="progress" style="width: 70%;" data-width="70"></div></div>
+                <span class="progress-text">70%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <p>PHP</p>
+                <div class="progress-bar"><div class="progress" style="width: 85%;" data-width="85"></div></div>
+                <span class="progress-text">85%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+                <div class="progress-bar"><div class="progress" style="width: 80%;" data-width="80"></div></div>
+                <span class="progress-text">80%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <p>phpMyAdmin</p>
+                <div class="progress-bar"><div class="progress" style="width: 80%;" data-width="80"></div></div>
+                <span class="progress-text">80%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-robot"></i>
+                <p>AI Tools</p>
+                <div class="progress-bar"><div class="progress" style="width: 75%;" data-width="75"></div></div>
+                <span class="progress-text">75%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="PetAdoptionHub.png" alt="Pet Adoption Hub">
+                <h3>Pet Adoption Hub</h3>
+                <p>A static website with interactive forms and email notifications, built for seamless user engagement.</p>
+                <div class="project-links">
+                    <a href="https://github.com/patelkaushal1902/Pet-Adoption-Hub" target="_blank" class="btn">GitHub</a>
+                    <a href="https://kingsrowcafe.rf.gd/" target="_blank" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="KingsRowCafe.png" alt="King's Row Cafe">
+                <h3>King's Row Cafe</h3>
+                <p>A dynamic cafe management system praised for its innovative design and functionality.</p>
+                <div class="project-links">
+                    <a href="#" class="btn disabled">GitHub (Coming Soon)</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="SAMS.png" alt="Attendance System">
+                <h3>Student Attendance System</h3>
+                <p>A web-based system with automated email notifications, developed in a single day.</p>
+                <div class="project-links">
+                    <a href="#" class="btn disabled">GitHub (Coming Soon)</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="portfolio.png" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio showcasing animated designs and interactive features.</p>
+                <div class="project-links">
+                    <a href="https://github.com/patelkaushal1902/portfolio" target="_blank" class="btn">GitHub</a>
+                    <a href="https://kaushalpatel.rf.gd/" target="_blank" class="btn">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Section -->
+    <section id="milestones" class="milestones">
+        <h2 class="section-title">My Milestones</h2>
+        <div class="milestones-grid">
+            <div class="milestone-card">
+                <p>King's Row Cafe project received high praise from faculty and peers for its innovative approach.</p>
+            </div>
+            <div class="milestone-card">
+                <p>Completed Student Attendance System in just one day, demonstrating rapid development skills.</p>
+            </div>
+            <div class="milestone-card">
+                <p>Designed a responsive portfolio with advanced animations, earning positive feedback for creativity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form id="contact-form" action="https://formspree.io/f/xnnvgznz" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Name">
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Your Mobile Number" pattern="[0-9]{10}" required aria-label="Mobile Number" title="Enter a 10-digit mobile number">
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" required aria-label="Message"></textarea>
+                <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Kaushal Patel. Crafted with <i class="fas fa-heart"></i> for the web.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
